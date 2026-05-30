@@ -17,6 +17,8 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     if (data.status === "success") {
         // simpan username
             localStorage.setItem("username", data.username);
+            console.log("Login berhasil");
+            console.log(data);
             window.location.href = "../index.html";
          
     // } else {
